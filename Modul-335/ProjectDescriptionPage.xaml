@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Modul_335.ProjectDescriptionPage"
+             Title="Projektbeschreibung">
+
+    <StackLayout Padding="20">
+        <Label Text="Projektbeschreibung"
+               FontSize="24"
+               HorizontalOptions="Center" />
+
+        <Label Text="Dieses Projekt ist im Rahmen der Leistungsbewertung des Modul 335 entstanden..."
+               FontSize="18"
+               VerticalOptions="CenterAndExpand" />
+    </StackLayout>
+
+</ContentPage>

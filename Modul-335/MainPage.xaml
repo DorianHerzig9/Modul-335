@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Modul_335.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            BackgroundColor="Grey"
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="Welcome to the click Marathon"
+                ScaleX="1"
+                ScaleY="0.8"
+                TextColor="Gold"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level9" />
+
+            <Label
+                Text="Click the button to walk"
+                TextColor="Gold"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level9"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <!-- Label zur Anzeige der Klickanzahl -->
+            <Label
+                Text="{Binding ClickCountText}"
+                TextColor="Gold"
+                FontSize="24"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+
+            <Grid>
+                <!-- Hintergrundbild -->
+                <Image
+                    Source="strasse.jpg"
+                    Aspect="Fill"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalOptions="FillAndExpand"
+                    SemanticProperties.Description="Street background" />
+
+                <!-- Button, der über dem Bild liegt -->
+                <Button
+                    Text="{Binding ButtonText}"
+                    TextColor="Gold"
+                    BackgroundColor="Grey"
+                    Command="{Binding ClickCommand}"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center" />
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
